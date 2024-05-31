@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/asserts/Web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    
+}
+    /* Navigation Bar */
+
+    .nav {
+        height: 90px;
+        width: 100%;
+        position: relative;
+        
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+      }
+      
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+          }
+      
+      .nav > .nav-btn {
+        display: none;
+      }
+      
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 28px;
+      }
+      
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #f0ec0c;
+        margin-top: 16px;
+        font-size: 30px;
+      }
+      
+      .nav > .nav-links > a:hover {
+        background-color: rgba(28, 218, 3, 0.3);
+      }
+      
+      .nav > #nav-check {
+        display: none;
+      }
+    
+img{
+    height:8vh;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+    
+}
+.about-container{
+        border: 1px solid green;
+        display: grid;
+        background-color: wheat;
+        margin: auto;
+        width: 100%;
+}
+.main-about{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3rem;
+}
+.about{
+  display: flex;
+  gap: 3rem;
+  border: 1px solid blue;
+  width: 60vw;
+  height: 30vh;
+  background-color: wheat;
+  align-items: center;
+}
+h2{
+  background-color: white;
+ text-align: center;
+  
+}
+.about>div>p{
+  color: rgb(15, 11, 2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.about-img{
+  width: 15vw;
+  height: 20vh;
+  border-radius: 0;
+}
+.team2>p{
+  color: white;
+  
+}
+.about-blog{
+  background-color: rgb(247, 163, 9);
+  border: 1px solid rgb(0, 0, 255);
+  width: 100%;
+}
+label{
+  text-align: center;
+  color: green;
+  font-size: 20px;
+  display: block;
+}
+.main-team{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 1rem;
+}
+.team1{
+  display: block;
+  width: 50%;
+}
+.team{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: rgb(206, 42, 105);
+  width: 50vw;
+}
+.team2{
+  display: block;
+  text-align: center;
+  width: fit-content;
+}
+.about-imgg{
+  width: 10vw;
+  height: 20vh;
+  border-radius: 100%;
+}
+.team3{
+  border: 1px solid blue;
+  background-color: #a0f00c;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.imGG{
+  border-radius: 0;
+  height: 20vh;
+}
+@media only screen and (max-width: 500px){
+   
+  .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 40px;
+    }
+    .nav{
+      height: 80px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+   
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 0;
+    }
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 6px solid #f1e9ea;
+      margin-top: -3px;
+      margin-left: -20px;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 50%;
+      background-color: #fabb0c;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 58px;
+      right: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      color: blue;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(65vh - 50px);
+      overflow-y: auto;
+    }
+    img{
+        height:14vh;
+        border-radius: 50px;
+        margin-left: 40px;
+        
+    }
+    body{
+        background-image: url(/asserts/Web.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+  
+        height: auto;
+        
+    }
+    .about-container{
+      border: none;
+      display: grid;
+      background-color:rgb(128, 58, 0);
+      margin:40px auto;
+      width: 100%;
+}
+.main-about{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+gap: 3rem;
+}
+.about{
+display: block;
+gap: 3rem;
+border: 1px solid blue;
+width: 100%;
+height: 80vh;
+background-color: rgb(243, 71, 4);
+align-items: center;
+}
+h2{
+background-color: white;
+text-align: center;
+
+}
+.about>div>p{
+color: rgb(236, 233, 4);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+.about-img{
+width: 100%;
+height: 40vh;
+border-radius: 0;
+margin: 0;
+}
+.team2>p{
+color: white;
+
+}
+h5{
+  font-size: 14px;
+  color: #061403;
+}
+.about-blog{
+background-color: rgb(247, 163, 9);
+border: none;
+width: 100%;
+}
+label{
+text-align: center;
+color: green;
+font-size: 20px;
+display: block;
+}
+.main-team{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+align-items: center;
+gap: 1rem;
+}
+.team1{
+display: block;
+width: 50%;
+}
+.team{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+background-color: rgb(206, 42, 105);
+width: 100%;
+}
+.team2{
+display: block;
+margin: auto 30px;
+text-align: center;
+width: fit-content;
+}
+.about-imgg{
+width: 60vw;
+height: 20vh;
+border-radius: 0;
+}
+.team3{
+border: 1px solid blue;
+background-color: #a0f00c;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+.imGG{
+border-radius: 0;
+height: 20vh;
+}
+  
+  
+  
+  }  

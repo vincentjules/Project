@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/asserts/Web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    
+}
+              /* Navigation Bar */
+
+    .nav {
+        height: 90px;
+        width: 100%;
+        position: relative;
+        
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+      }
+      
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+      }
+      
+      .nav > .nav-btn {
+        display: none;
+      }
+      
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 28px;
+      }
+      
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #f0ec0c;
+        margin-top: 16px;
+        font-size: 30px;
+      }
+      
+      .nav > .nav-links > a:hover {
+        background-color: rgba(28, 218, 3, 0.3);
+      }
+      
+      .nav > #nav-check {
+        display: none;
+      }
+    
+.img{
+  display: grid;
+    height:13vh;
+    margin: 15px 60px;
+    border-radius: 50px;
+
+}
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 8rem;
+  align-items: center;
+ }
+.main1{
+  background-image: url(/asserts/Garage.webp);
+  width:120%;
+  min-height:50vh;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 350px;
+  text-align: center;
+} 
+.main2{
+  background-color: white;
+  width:120%;
+  min-height:50vh;
+  border: 1px solid green;
+  margin: 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.main3{
+  width:85%;
+  background-color: white;
+  min-height:10vh;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid pink;
+} 
+.image{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 20px;
+  gap: 1rem;
+}
+.ii{
+  display: grid;
+    height:15vh;
+    margin: auto;
+    border-radius: 5px;
+
+}
+.mage{
+  display: flex;
+  gap: 3rem;
+  width: 60%;
+  margin: 10px ;
+  
+}
+.main3>.a{
+  color: red;
+}
+label{
+  color: rgb(47, 11, 252);
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: block;
+  text-align: center;
+  
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+footer{
+  grid-area: footer;
+  padding-left: 30px;
+  color: white;
+  background-color:  rgb(77, 51, 42);
+  margin-top: 70px;
+}
+h3{
+  color: plum;
+}
+
+@media only screen and (max-width: 500px){
+   
+.nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+  }
+  .nav{
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    padding-top: 25px;
+  }
+  
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 6px solid #f1e9ea;
+    margin-top: -3px;
+    margin-left: -20px;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background-color: #fabb0c;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 100px;
+    right: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    color: blue;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(55vh - 50px);
+    overflow-y: auto;
+  }
+  .img{
+      height:14vh;
+      border-radius: 50px;
+      margin-left: 40px;
+      
+  }
+  body{
+      background-image: url(/asserts/Web.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      height: auto;
+      
+  }
+
+
+
+    .main{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 0.5rem;
+      align-items: center;
+      margin: 10px 10px;
+    }
+    .main1{
+      background-image: url(/asserts/Garage.webp);
+      width:90%;
+      display: grid;
+      min-height:50vh;
+      margin: 50px 20px;
+      padding-top: 350px;
+      text-align: center;
+      
+    } 
+    .main>.main1>label{
+      font-size: 25px;
+    }
+    .main2{
+      background-color: white;
+      width:100%;
+      gap: 1rem;
+      min-height:20vh;
+      margin: 0;
+    } 
+    .main3{
+      width:85%;
+      min-height:10vh;
+      margin: 20px 30px;
+      border: 10px solid pink;
+    } 
+    .image{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin: auto;
+      gap: 1rem;
+    }
+    .ii{
+      display: grid;
+        height:15vh;
+        margin: auto;
+        border-radius: 5px;
+    
+    }
+    label{
+      color: rgb(47, 11, 252);
+      font-size: 20px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      display: block;
+      text-align: center;
+      
+    }
+    
+    
+    
+    
+  }

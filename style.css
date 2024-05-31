@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/asserts/Web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    
+}
+                     /* Navigation Bar */
+   .nav {
+        height: 90px;
+        width: 100%;
+        position: relative;
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+      }
+      
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+       }
+      
+      .nav > .nav-btn {
+        display: none;
+      }
+      
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 28px;
+      }
+      
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #f0ec0c;
+        margin-top: 46px;
+        font-size: 40px;
+        /* background-color: black; */
+      }
+      
+      .nav > .nav-links > a:hover {
+        background-color: rgba(12, 126, 233, 0.897);
+      }
+      
+      .nav > #nav-check {
+        display: none;
+      }
+    
+img{
+    height:14vh;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+    
+}
+
+         /* section */
+
+.div-section {
+       width: fit-content;
+       margin-top: 250px;
+       margin-left: 100px;
+}
+.div-section>label {
+    font-size: 120px;
+    color: rgb(245, 221, 4);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.div-section>p{
+    font-size: 20px;
+    color: rgb(241, 239, 240);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: green;
+    display: block;
+    margin: 20px auto;
+    
+    
+}
+a{
+    color: tan;
+    text-decoration: none;
+}
+      /* Footer */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer{
+    grid-area: footer;
+    display: block;
+    padding: 30px 100px;
+    color: white;
+    background-color:  rgb(77, 51, 42);
+    margin-top: 300px;
+    height: 30vh;
+}
+h3{
+    color: plum;
+}
+@media only screen and (max-width: 500px){
+   
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav{
+      height: 80px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      padding-top: 25px;
+    }
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 6px solid #f1e9ea;
+      margin-top: -3px;
+      margin-left: -20px;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 50%;
+      background-color: #fabb0c;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      right: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 40%;
+      color: blue;
+      font-size: 20px;
+      margin: 0;
+      
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(40vh - 50px);
+      overflow-y: auto;
+    }
+    img{
+        height:10vh;
+        border-radius: 50px;
+        margin-left: 40px;
+        
+    }
+    body{
+        background-image: url(/asserts/Web.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 100vh;
+        
+    }
+    .div-section {
+        width: fit-content;
+        margin: 0;
+        margin-top: 120px;
+        margin-left: 10px;
+      }
+ .div-section>label {
+     font-size: 50px;
+     color: rgb(245, 221, 4);
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .div-section>p{
+     font-size: 15px;
+     color: rgb(236, 230, 225);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ button{
+     padding: 20px;
+     border-radius: 10px;
+     background-color: green;
+     margin-top: 20px;
+     
+ }
+ a{
+     color: tan;
+     text-decoration: none;
+ }
+ .footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer{
+    grid-area: footer;
+    padding: 0;
+    color: white;
+    background-color: rgb(77, 51, 42);
+    margin-top: 270px;
+}
+h3{
+    color: rgb(205, 221, 160);
+    font-size: 13px;
+}
+ 
+    
+
+
+}

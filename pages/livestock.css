@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/asserts/Web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    
+}
+    /* Navigation Bar */
+
+    .nav {
+        height: 90px;
+        width: 100%;
+        position: relative;
+        
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+      }
+      
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+        /* font-size: 22px;
+        color: #16ced4;
+        padding: 10px 10px 10px 10px;
+        font-size: 40px; */
+      }
+      
+      .nav > .nav-btn {
+        display: none;
+      }
+      
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 28px;
+      }
+      
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #f0ec0c;
+        margin-top: 16px;
+        font-size: 30px;
+      }
+      
+      .nav > .nav-links > a:hover {
+        background-color: rgba(3, 218, 21, 0.3);
+      }
+      
+      .nav > #nav-check {
+        display: none;
+      }
+    
+.img{
+    height:14vh;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-top: 3px;
+    
+}
+.div-section>div>a{
+  text-decoration: none;
+  color: rgb(145, 255, 0);
+  font-size: 20px;
+  margin-left:100px;
+  /* margin: auto; */
+  
+}
+
+h2{
+  text-align: center;
+  background-color: greenyellow;
+  margin-top: 10px;
+  height: 10vh;
+  font-size: 30px;
+  padding-top: 15px;
+}
+     /* Section */
+.div-section{
+  background-image: url(/asserts/Web.jpg);
+  display: grid;
+  padding-left: 150px ;
+  grid-template-columns: repeat(3,1fr);
+  
+  margin-top: 10px;
+}
+.img1{
+  height:150px;
+  width: 85%;
+  border-radius: 0px;
+  border: 4px solid white;
+} 
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+footer{
+  grid-area: footer;
+  padding-left: 30px;
+  color: white;
+  background-color:  rgb(77, 51, 42);
+  margin-top: 70px;
+}
+h3{
+  color: plum;
+}
+
+@media only screen and (max-width: 500px){
+   
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav{
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .nav > .nav-header > .nav-title{
+    font-size: 30px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    padding-top: 50px;
+  }
+  
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 6px solid #f1e9ea;
+    margin-top: -3px;
+    margin-left: -20px;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background-color: #fabb0c;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    right: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    color: blue;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(60vh - 50px);
+    overflow-y: auto;
+  }
+  img{
+      height:10vh;
+      border-radius: 50px;
+      margin-left: 40px;
+      
+  }
+  h2{
+    text-align: center;
+    background-color: rgb(253, 28, 96);
+    margin-top: 10px;
+    height: 10vh;
+    color: greenyellow;
+    padding-top: 15px;
+  }
+  .div-section{
+    background-color: rgb(231, 108, 7);
+    background-image: none;
+    display: grid;
+    padding: 0;
+    gap: 1rem;
+    padding-top: 10px;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0;
+  }
+  .img1{
+    border: 4px solid white;
+    height:130px;
+    width: 65%;
+    border-radius: 0px;
+    margin-left: 80px;
+  } 
+  .div-section>div>a{
+    text-decoration: none;
+    color: rgb(255, 255, 0);
+    font-size: 20px;
+    /* margin-left:190px; */
+    display: block;
+  }
+  
+  
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  footer{
+    grid-area: footer;
+    padding-left: 30px;
+    color: white;
+    background-color:  rgb(77, 51, 42);
+    margin-top: 70px;
+  }
+  h3{
+    color: plum;
+  }
+
+}
+
+
