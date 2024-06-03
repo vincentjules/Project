@@ -91,7 +91,7 @@ h2{
 
 .footer{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(1,1fr);
 }
 footer{
   grid-area: footer;
@@ -103,6 +103,49 @@ footer{
 h3{
   color: plum;
 }
+.call{
+  margin-top: 40px;
+}
+h3{
+    color: plum;
+}
+.bowen{
+  display: flex;
+  /* border: 1px solid green; */
+  margin: 0;
+  
+}
+.bowen>h3{
+  margin-top: 60px;
+  font-size: 30px;
+}
+.font{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 60px;
+  margin: 50px 0;
+  /* border: 1px solid red ; */
+}
+.font>a{
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid green; */
+}
+#btn{
+  font-size: 40px;
+  color: white;
+}
+#btn:hover{
+  color: blue;
+}
+#mag{
+  height: 100px;
+  border-radius: 80px;
+  margin-top: 30px;
+}
+
+
 @media only screen and (max-width: 500px){
    
   .nav > .nav-btn {

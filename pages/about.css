@@ -62,7 +62,7 @@ img{
     
 }
 .about-container{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         display: grid;
         background-color: wheat;
         margin: auto;
@@ -76,7 +76,7 @@ img{
 .about{
   display: flex;
   gap: 3rem;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 60vw;
   height: 30vh;
   background-color: wheat;
@@ -103,7 +103,7 @@ h2{
 }
 .about-blog{
   background-color: rgb(247, 163, 9);
-  border: 1px solid rgb(0, 0, 255);
+  /* border: 1px solid rgb(0, 0, 255); */
   width: 100%;
 }
 label{
@@ -139,7 +139,7 @@ label{
   border-radius: 100%;
 }
 .team3{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   background-color: #a0f00c;
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -148,6 +148,48 @@ label{
   border-radius: 0;
   height: 20vh;
 }
+.call{
+  margin-top: 40px;
+}
+h3{
+    color: plum;
+}
+.bowen{
+  display: flex;
+  /* border: 1px solid green; */
+  margin: 0;
+  
+}
+#mag{
+  height: 100px;
+  border-radius: 80px;
+}
+.bowen>h3{
+  margin-top: 60px;
+  font-size: 30px;
+}
+.font{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 60px;
+  margin: 50px 0;
+  /* border: 1px solid red ; */
+}
+.font>a{
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid green; */
+}
+#btn{
+  font-size: 40px;
+  color: white;
+}
+#btn:hover{
+  color: blue;
+}
+
+
 @media only screen and (max-width: 500px){
    
   .nav > .nav-btn {
@@ -230,7 +272,7 @@ gap: 3rem;
 .about{
 display: block;
 gap: 3rem;
-border: 1px solid blue;
+/* border: 1px solid blue; */
 width: 100%;
 height: 80vh;
 background-color: rgb(243, 71, 4);
@@ -299,7 +341,7 @@ height: 20vh;
 border-radius: 0;
 }
 .team3{
-border: 1px solid blue;
+/* border: 1px solid blue; */
 background-color: #a0f00c;
 display: grid;
 grid-template-columns: repeat(2,1fr);

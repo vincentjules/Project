@@ -57,7 +57,7 @@ img{
     height:14vh;
     border-radius: 50px;
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 30px;
     
 }
 
@@ -94,20 +94,56 @@ a{
       /* Footer */
 .footer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 5rem;
 }
 footer{
     grid-area: footer;
     display: block;
-    padding: 30px 100px;
+    padding: 10px 50px;
     color: white;
     background-color:  rgb(77, 51, 42);
     margin-top: 300px;
-    height: 30vh;
+    height: fit-content;
+}
+.call{
+  margin-top: 40px;
 }
 h3{
     color: plum;
 }
+.bowen{
+  display: flex;
+  /* border: 1px solid green; */
+  margin: 0;
+  
+}
+.bowen>h3{
+  margin-top: 60px;
+  font-size: 30px;
+}
+.font{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 60px;
+  margin: 50px 0;
+  /* border: 1px solid red ; */
+}
+.font>a{
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid green; */
+}
+#btn{
+  font-size: 40px;
+  color: white;
+}
+#btn:hover{
+  color: blue;
+}
+
+
 @media only screen and (max-width: 500px){
    
     .nav > .nav-btn {
@@ -165,9 +201,9 @@ h3{
       overflow-y: auto;
     }
     img{
-        height:10vh;
+        height:15vh;
         border-radius: 50px;
-        margin-left: 40px;
+        margin: 4px 0;
         
     }
     body{
@@ -207,7 +243,7 @@ h3{
  }
  .footer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
 }
 footer{
     grid-area: footer;
@@ -215,11 +251,39 @@ footer{
     color: white;
     background-color: rgb(77, 51, 42);
     margin-top: 270px;
+    text-align: center;
+    height: fit-content;
+}
+#mag{
+  height: 100px;
+      
 }
 h3{
     color: rgb(205, 221, 160);
-    font-size: 13px;
+    font-size: 21px;
 }
+.font{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 60px;
+  margin: 20px auto;
+  /* border: 1px solid red ; */
+}
+.font>a{
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid green; */
+}
+#btn{
+  font-size: 40px;
+  color: white;
+}
+#btn:hover{
+  color: blue;
+}
+
+
  
     
 
